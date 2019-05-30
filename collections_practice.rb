@@ -137,7 +137,6 @@ def organize_schools(arg)
     location_hash.each do |loc, value|
       unless location_array.include?(value)
         location_array.push(value)
-        binding.pry
       end
     end
   end 
