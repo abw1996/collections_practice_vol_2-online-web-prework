@@ -131,9 +131,9 @@ end
 
 
 def organize_schools(arg)
-  locations_array = []
   final_hash = {}
   arg.each do |school, location_hash|
+    binding.pry
   end 
     
 end
