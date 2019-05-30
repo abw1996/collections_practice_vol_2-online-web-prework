@@ -132,8 +132,13 @@ end
 
 def organize_schools(arg)
   final_hash = {}
+  location_array = []
   arg.each do |school, location_hash|
-    binding.pry
+    location_hash.each |loc, value|
+    unless location_array.include?(value)
+      location_array.push(value)
+      binding.pry
+    end
   end 
-    
+   final_hash 
 end
