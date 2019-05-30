@@ -143,5 +143,10 @@ def organize_schools(arg)
   location_array.each do |city|
     final_hash[city] = []
   end
+  arg.each do |school, location_hash|
+    location_hash.each do |loc, value|
+      final_hash[value].push(school)
+    end
+  end
    final_hash 
 end
